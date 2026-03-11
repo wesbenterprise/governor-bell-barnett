@@ -34,7 +34,7 @@ export default function Universities() {
           { label: "4-Year Grad Rate", value: "62%" },
         ].map((s) => (
           <div key={s.label} className="bg-[#0f2040] border border-[#1a3a6b] rounded-xl p-4 text-center">
-            <p className="text-2xl font-bold text-[#c9a84c]"
+            <p className="text-2xl font-bold text-[#F4811F]"
               style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}>
               {s.value}
             </p>
@@ -97,7 +97,7 @@ export default function Universities() {
                   <p className="text-[11px] text-[#6a8faf]">{u.location}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs font-bold text-[#c9a84c]">{u.enrollment}</p>
+                  <p className="text-xs font-bold text-[#F4811F]">{u.enrollment}</p>
                   <p className="text-[10px] text-[#6a8faf]">enrollment</p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function Universities() {
                   <ul className="space-y-1">
                     {u.notableActions.slice(0, 2).map((action, i) => (
                       <li key={i} className="flex items-start gap-1.5">
-                        <span className="text-[#c9a84c] mt-0.5 flex-shrink-0 text-[10px]">▸</span>
+                        <span className="text-[#F4811F] mt-0.5 flex-shrink-0 text-[10px]">▸</span>
                         <p className="text-[11px] text-[#a0b8d0] leading-snug">{action}</p>
                       </li>
                     ))}

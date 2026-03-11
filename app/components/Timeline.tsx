@@ -112,7 +112,7 @@ export default function Timeline() {
             <p className="text-[10px] text-[#8fafd4] uppercase tracking-wider">Universities</p>
           </div>
           <div>
-            <p className="text-xl font-bold text-[#F4811F]">9+</p>
+            <p className="text-xl font-bold text-[#F4811F]">6.8</p>
             <p className="text-[10px] text-[#8fafd4] uppercase tracking-wider">Years Remaining</p>
           </div>
         </div>

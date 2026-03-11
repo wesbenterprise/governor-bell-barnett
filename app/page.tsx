@@ -35,7 +35,7 @@ export default function Home() {
         <div className="sticky top-0 z-20 bg-[#060e1a]/95 backdrop-blur border-b border-[#1a3a6b] px-4 sm:px-6 py-3 flex items-center gap-3">
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden flex flex-col gap-1.5 p-1 text-[#c9a84c]"
+            className="lg:hidden flex flex-col gap-1.5 p-1 text-[#F4811F]"
             onClick={() => setSidebarOpen(true)}
             aria-label="Open navigation"
           >

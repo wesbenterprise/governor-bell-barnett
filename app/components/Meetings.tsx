@@ -64,7 +64,7 @@ export default function Meetings() {
                     {m.dates}
                   </h4>
                   <div className="flex items-center gap-1.5">
-                    <span className="text-[#c9a84c] text-xs">📍</span>
+                    <span className="text-[#F4811F] text-xs">📍</span>
                     <p className="text-sm text-[#8fafd4]">{m.location}</p>
                   </div>
                 </div>
@@ -81,9 +81,9 @@ export default function Meetings() {
       {/* Past meetings */}
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-4 bg-[#c9a84c] rounded"></div>
+          <div className="w-1 h-4 bg-[#F4811F] rounded"></div>
           <h3
-            className="text-sm font-bold text-[#c9a84c] uppercase tracking-wider"
+            className="text-sm font-bold text-[#F4811F] uppercase tracking-wider"
             style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
           >
             Past Meetings
@@ -111,7 +111,7 @@ export default function Meetings() {
                       {m.dates}
                     </h4>
                     <div className="flex items-center gap-1 mt-0.5">
-                      <span className="text-[#c9a84c] text-[11px]">📍</span>
+                      <span className="text-[#F4811F] text-[11px]">📍</span>
                       <p className="text-xs text-[#6a8faf]">{m.location}</p>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export default function Meetings() {
                           className={`flex-shrink-0 mt-0.5 text-[11px] ${
                             h.includes("REJECTED") || h.includes("historic")
                               ? "text-red-400"
-                              : "text-[#c9a84c]"
+                              : "text-[#F4811F]"
                           }`}
                         >
                           ▸
@@ -155,7 +155,7 @@ export default function Meetings() {
       {/* Footer note */}
       <div className="mt-6 p-4 rounded-xl bg-[#0f2040] border border-[#1a3a6b]">
         <p className="text-xs text-[#6a8faf]">
-          <span className="text-[#c9a84c] font-semibold">Meeting cadence:</span> The Board of Governors
+          <span className="text-[#F4811F] font-semibold">Meeting cadence:</span> The Board of Governors
           typically meets 4–6 times per year. Meetings are open to the public and agendas are posted in
           advance on the BOG website. Special or emergency meetings may be called by the Chair.
         </p>
