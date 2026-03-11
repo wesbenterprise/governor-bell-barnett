@@ -67,15 +67,19 @@ export default function Timeline() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
               <div className="bg-[#0a1628] rounded-lg p-2.5 border border-[#1a3a6b]">
-                <p className="text-[10px] text-[#6a8faf] uppercase tracking-wider mb-0.5">Term I</p>
+                <div className="flex items-center justify-between mb-0.5">
+                  <p className="text-[10px] text-[#6a8faf] uppercase tracking-wider">Term I</p>
+                  <p className="text-[10px] text-[#6a8faf] font-medium">2.1y</p>
+                </div>
                 <p className="text-xs text-white font-medium">
                   {bio.term1.start} — {bio.term1.end}
                 </p>
               </div>
               <div className="bg-[#0a1628] rounded-lg p-2.5 border border-[#F4811F]/40">
-                <p className="text-[10px] text-[#F4811F] uppercase tracking-wider mb-0.5">
-                  Term II (Active)
-                </p>
+                <div className="flex items-center justify-between mb-0.5">
+                  <p className="text-[10px] text-[#F4811F] uppercase tracking-wider">Term II (Active)</p>
+                  <p className="text-[10px] text-[#F4811F] font-medium">7y</p>
+                </div>
                 <p className="text-xs text-white font-medium">
                   {bio.term2.start} — {bio.term2.end}
                 </p>
@@ -238,7 +242,7 @@ export default function Timeline() {
                             </span>
                           )}
                           {m.ashleyVote === "no" && (
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#c97a5a]">
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#6a8faf]">
                               Ashley voted no
                             </span>
                           )}

@@ -202,7 +202,7 @@ export default function ImpactVotes() {
                     </span>
                   )}
                   {m.ashleyVote === "no" && (
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#c97a5a]">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#6a8faf]">
                       Ashley voted no
                     </span>
                   )}
