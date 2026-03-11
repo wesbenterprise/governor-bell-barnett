@@ -31,7 +31,7 @@ export default function Board() {
         ].map((s) => (
           <div key={s.label} className="bg-[#0f2040] border border-[#1a3a6b] rounded-xl p-4 text-center">
             <p
-              className="text-2xl font-bold text-[#c9a84c]"
+              className="text-2xl font-bold text-[#FA4616]"
               style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
             >
               {s.value}
@@ -44,7 +44,7 @@ export default function Board() {
       {/* Info box */}
       <div className="mb-6 p-4 rounded-xl bg-[#0f2040] border border-[#1a3a6b]">
         <p className="text-xs text-[#a0b8d0] leading-relaxed">
-          <span className="text-[#c9a84c] font-semibold">About the BOG:</span> The Florida Board of
+          <span className="text-[#FA4616] font-semibold">About the BOG:</span> The Florida Board of
           Governors was established by constitutional amendment in 2002 (Amendment 11). It is
           constitutionally responsible for the operation, regulation, control, and management of
           the State University System. The 14 citizen members are appointed by the Governor and
@@ -55,9 +55,9 @@ export default function Board() {
       {/* Governor-appointed members */}
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-1 h-5 bg-[#c9a84c] rounded"></div>
+          <div className="w-1 h-5 bg-[#FA4616] rounded"></div>
           <h3
-            className="text-sm font-bold text-[#c9a84c] uppercase tracking-wider"
+            className="text-sm font-bold text-[#FA4616] uppercase tracking-wider"
             style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
           >
             Governor-Appointed Members ({appointed.length})
@@ -70,7 +70,7 @@ export default function Board() {
               key={member.id}
               className={`rounded-xl border p-4 transition-all duration-200 ${
                 member.isSubject
-                  ? "bg-[#0d1f38] border-[#c9a84c]/50 shadow-[0_0_16px_rgba(201,168,76,0.1)]"
+                  ? "bg-[#0d1f38] border-[#FA4616]/50 shadow-[0_0_16px_rgba(201,168,76,0.1)]"
                   : "bg-[#0f2040] border-[#1a3a6b] hover:border-[#2a5a8b]"
               }`}
             >
@@ -79,14 +79,14 @@ export default function Board() {
                   <div className="flex items-center gap-2 mb-0.5">
                     <h4
                       className={`text-sm font-bold leading-tight ${
-                        member.isSubject ? "text-[#c9a84c]" : "text-white"
+                        member.isSubject ? "text-[#FA4616]" : "text-white"
                       }`}
                       style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
                     >
                       {member.name}
                     </h4>
                     {member.isSubject && (
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#c9a84c]/15 text-[#c9a84c] border border-[#c9a84c]/40 font-bold uppercase tracking-wide flex-shrink-0">
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#FA4616]/15 text-[#FA4616] border border-[#FA4616]/40 font-bold uppercase tracking-wide flex-shrink-0">
                         ★ You
                       </span>
                     )}

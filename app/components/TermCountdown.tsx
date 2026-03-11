@@ -64,10 +64,10 @@ export default function TermCountdown() {
   const labelAnchor = "start";
 
   return (
-    <div className="mb-10 rounded-xl border border-[#c9a84c]/30 bg-[#080f1d] overflow-hidden shadow-xl">
+    <div className="mb-10 rounded-xl border border-[#FA4616]/30 bg-[#080f1d] overflow-hidden shadow-xl">
       <div className="px-5 pt-5 pb-2">
         <h3
-          className="text-sm font-bold text-[#c9a84c] uppercase tracking-widest mb-0.5"
+          className="text-sm font-bold text-[#FA4616] uppercase tracking-widest mb-0.5"
           style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
         >
           TERM II COUNTDOWN
@@ -109,10 +109,10 @@ export default function TermCountdown() {
         ))}
 
         {/* Area fill */}
-        <path d={areaPath} fill="#c9a84c" fillOpacity="0.10" />
+        <path d={areaPath} fill="#FA4616" fillOpacity="0.10" />
 
         {/* Line */}
-        <path d={linePath} stroke="#c9a84c" strokeWidth="2.5" fill="none" />
+        <path d={linePath} stroke="#FA4616" strokeWidth="2.5" fill="none" />
 
         {/* Axes */}
         <line
@@ -138,7 +138,7 @@ export default function TermCountdown() {
           y1={padTop}
           x2={xT}
           y2={chartBottom}
-          stroke="#c9a84c"
+          stroke="#FA4616"
           strokeWidth="1.5"
           strokeDasharray="4,3"
           strokeOpacity="0.6"
@@ -149,7 +149,7 @@ export default function TermCountdown() {
           cx={xT}
           cy={yT}
           r="6"
-          fill="#c9a84c"
+          fill="#FA4616"
           stroke="#080f1d"
           strokeWidth="2.5"
         />
@@ -159,7 +159,7 @@ export default function TermCountdown() {
         <text
           x={labelX}
           y={yT - 10}
-          fill="#c9a84c"
+          fill="#FA4616"
           fontSize="11"
           fontWeight="bold"
           textAnchor={labelAnchor}
