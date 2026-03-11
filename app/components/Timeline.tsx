@@ -233,18 +233,18 @@ export default function Timeline() {
                             </div>
                           )}
                           {m.ashleyVote === "yes" && (
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-green-950/60 text-green-400 border border-green-600/60">
-                              Ashley: YES ✓
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#6a8faf]">
+                              Ashley voted yes
                             </span>
                           )}
                           {m.ashleyVote === "no" && (
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#FA4616]/10 text-[#FA4616] border border-[#FA4616]/40">
-                              Ashley: NO ✗
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#c97a5a]">
+                              Ashley voted no
                             </span>
                           )}
                           {m.ashleyVote === "unknown" && (
-                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#1a2a3a]/60 text-[#6a8faf] border border-[#2a5a8b]/50">
-                              Ashley: Vote not public
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] text-[#4a6a8f]">
+                              Vote not yet public
                             </span>
                           )}
                         </div>
