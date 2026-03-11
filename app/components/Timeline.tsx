@@ -1,6 +1,7 @@
 "use client";
 
 import { milestones, bio, Milestone } from "@/app/data";
+import TermCountdown from "@/app/components/TermCountdown";
 
 const TODAY = "2026-03-11";
 
@@ -113,6 +114,9 @@ export default function Timeline() {
         </div>
       </div>
 
+      {/* Term II Countdown Chart */}
+      <TermCountdown />
+
       {/* Term labels */}
       <div className="flex gap-4 mb-6 text-xs">
         <div className="flex items-center gap-2">
@@ -213,15 +217,29 @@ export default function Timeline() {
                       <p className="text-xs text-[#a0b8d0] leading-relaxed">{m.description}</p>
 
                       {m.voteOutcome && (
-                        <div
-                          className={`mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold ${
-                            m.voteOutcome.includes("REJECTED")
-                              ? "bg-red-900/50 text-red-300 border border-red-700"
-                              : "bg-[#0a1628] text-[#c9a84c] border border-[#c9a84c]/40"
-                          }`}
-                        >
-                          <span>📊</span>
-                          Vote: {m.voteOutcome}
+                        <div className="mt-2 flex flex-wrap gap-1.5 items-center">
+                          <div
+                            className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-semibold ${
+                              m.voteOutcome.toLowerCase().includes("rejected")
+                                ? "bg-red-900/50 text-red-300 border border-red-700"
+                                : m.voteOutcome === "Board Action"
+                                ? "bg-[#0a1628] text-[#6a8faf] border border-[#1a3a6b]"
+                                : "bg-[#0a1628] text-[#c9a84c] border border-[#c9a84c]/40"
+                            }`}
+                          >
+                            <span>📊</span>
+                            {m.voteOutcome === "Board Action" ? "Board Action" : `Vote: ${m.voteOutcome}`}
+                          </div>
+                          {m.ashleyVote === "no" && (
+                            <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold bg-red-950/60 text-red-300 border border-red-600">
+                              ✗ Ashley voted NO
+                            </div>
+                          )}
+                          {m.ashleyVote === "yes" && (
+                            <div className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold bg-green-950/60 text-green-400 border border-green-600">
+                              ✓ Ashley voted YES
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>

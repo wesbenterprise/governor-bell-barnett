@@ -18,6 +18,7 @@ export interface Milestone {
   term: 1 | 2;
   category: MilestoneCategory;
   voteOutcome?: string;
+  ashleyVote?: "yes" | "no" | "unknown" | null;
   isFeatured?: boolean;
 }
 
@@ -107,11 +108,12 @@ export const milestones: Milestone[] = [
     sortDate: "2024-01-15",
     title: "Sociology Removed from General Education Core",
     description:
-      "Board votes to remove sociology from the general education core curriculum, replacing it with a 'factual history' course requirement across the State University System.",
+      "Board votes 14-3 to remove sociology from the general education core curriculum, replacing it with a 'factual history' course requirement. Ashley voted NO — one of three dissenters (with Amanda Phalin and Jack Hitchcock). She argued her sociology courses helped her become well-rounded, and that there's a difference between exposure and indoctrination.",
     significance: "major",
     term: 1,
     category: "curriculum",
-    voteOutcome: "Approved",
+    voteOutcome: "Approved (14-3)",
+    ashleyVote: "no",
   },
   {
     id: 3,
@@ -123,7 +125,7 @@ export const milestones: Milestone[] = [
     significance: "standard",
     term: 1,
     category: "curriculum",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 4,
@@ -135,7 +137,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "strategic",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 5,
@@ -147,7 +149,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "strategic",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 6,
@@ -170,7 +172,8 @@ export const milestones: Milestone[] = [
     significance: "historic",
     term: 1,
     category: "presidential",
-    voteOutcome: "10-6 REJECTED",
+    voteOutcome: "Rejected (10-6)",
+    ashleyVote: "unknown",
     isFeatured: true,
   },
   {
@@ -183,7 +186,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "presidential",
-    voteOutcome: "Unanimously Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 9,
@@ -196,6 +199,7 @@ export const milestones: Milestone[] = [
     term: 1,
     category: "tuition",
     voteOutcome: "Unanimously Approved",
+    ashleyVote: "yes",
   },
   {
     id: 10,
@@ -207,7 +211,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "accreditation",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 11,
@@ -219,7 +223,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "tuition",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 12,
@@ -231,7 +235,7 @@ export const milestones: Milestone[] = [
     significance: "standard",
     term: 1,
     category: "strategic",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 13,
@@ -243,7 +247,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "policy",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 14,
@@ -255,7 +259,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 1,
     category: "strategic",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
   {
     id: 15,
@@ -278,7 +282,7 @@ export const milestones: Milestone[] = [
     significance: "major",
     term: 2,
     category: "policy",
-    voteOutcome: "Approved",
+    voteOutcome: "Board Action",
   },
 ];
 
