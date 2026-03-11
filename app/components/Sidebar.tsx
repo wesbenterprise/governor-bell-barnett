@@ -63,7 +63,7 @@ export default function Sidebar({ activeTab, setActiveTab, open, onClose }: Side
           State University System
         </p>
         <div className="mt-3 pt-3 border-t border-[#1a3a6b]">
-          <p className="text-[11px] text-[#FA4616] font-semibold">Ashley Bell Barnett</p>
+          <p className="text-[11px] text-[#F4811F] font-semibold">Ashley Bell Barnett</p>
           <p className="text-[10px] text-[#8fafd4] mt-0.5">Member · Term II · 2026–2033</p>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default function Sidebar({ activeTab, setActiveTab, open, onClose }: Side
               onClick={() => handleSelect(item.id)}
               className={`w-full flex items-center gap-3 px-3 py-3 rounded-lg text-left transition-all duration-150 group ${
                 isActive
-                  ? "bg-[#FA4616] text-[#0a1628]"
+                  ? "bg-[#F4811F] text-[#0a1628]"
                   : "text-[#c8d9f0] hover:bg-[#152847] hover:text-white"
               }`}
             >

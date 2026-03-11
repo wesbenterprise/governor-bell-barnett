@@ -6,7 +6,7 @@ import { milestones, Milestone } from "@/app/data";
 type FilterCategory = "all" | Milestone["category"];
 
 const categoryConfig: Record<string, { label: string; color: string; bg: string; border: string }> = {
-  all: { label: "All Decisions", color: "text-white", bg: "bg-[#FA4616]", border: "border-[#FA4616]" },
+  all: { label: "All Decisions", color: "text-white", bg: "bg-[#F4811F]", border: "border-[#F4811F]" },
   presidential: { label: "Presidential", color: "text-purple-300", bg: "bg-purple-900/30", border: "border-purple-700/50" },
   tuition: { label: "Tuition & Funding", color: "text-blue-300", bg: "bg-blue-900/30", border: "border-blue-700/50" },
   curriculum: { label: "Curriculum", color: "text-green-300", bg: "bg-green-900/30", border: "border-green-700/50" },
@@ -95,7 +95,7 @@ export default function ImpactVotes() {
         ].map((s) => (
           <div key={s.label} className="bg-[#0f2040] border border-[#1a3a6b] rounded-xl p-3 text-center">
             <p
-              className="text-xl font-bold text-[#FA4616]"
+              className="text-xl font-bold text-[#F4811F]"
               style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
             >
               {s.value}
@@ -142,7 +142,7 @@ export default function ImpactVotes() {
                 m.significance === "historic"
                   ? "bg-[#1a0808] border-red-700/50"
                   : m.term === 2
-                  ? "bg-[#0d1f38] border-[#FA4616]/20 hover:border-[#FA4616]/40"
+                  ? "bg-[#0d1f38] border-[#F4811F]/20 hover:border-[#F4811F]/40"
                   : "bg-[#0f2040] border-[#1a3a6b] hover:border-[#2a5a8b]"
               }`}
             >
@@ -150,7 +150,7 @@ export default function ImpactVotes() {
                 <div className="flex flex-wrap items-center gap-1.5">
                   <span className="text-[11px] text-[#6a8faf] font-mono">{m.date}</span>
                   {m.term === 2 && (
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#FA4616]/10 text-[#FA4616] border border-[#FA4616]/30">
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#F4811F]/10 text-[#F4811F] border border-[#F4811F]/30">
                       TERM II
                     </span>
                   )}
@@ -190,7 +190,7 @@ export default function ImpactVotes() {
                           ? "bg-red-900/50 text-red-300 border border-red-700"
                           : m.voteOutcome === "Board Action"
                           ? "bg-[#0a1628] text-[#6a8faf] border border-[#1a3a6b]"
-                          : "bg-[#0a1628] text-[#FA4616] border border-[#FA4616]/40"
+                          : "bg-[#0a1628] text-[#F4811F] border border-[#F4811F]/40"
                       }`}
                     >
                       📊 {m.voteOutcome === "Board Action" ? "Board Action" : `Vote: ${m.voteOutcome}`}

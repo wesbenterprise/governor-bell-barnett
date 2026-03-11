@@ -19,11 +19,11 @@ export default function TermCountdown() {
   const elapsedDays = Math.floor(elapsedMs / (1000 * 60 * 60 * 24));
 
   return (
-    <div className="mb-10 rounded-xl border border-[#FA4616]/30 bg-[#080f1d] overflow-hidden shadow-xl">
+    <div className="mb-10 rounded-xl border border-[#F4811F]/30 bg-[#080f1d] overflow-hidden shadow-xl">
       <div className="px-5 pt-5 pb-3">
         <div className="flex items-center justify-between mb-1">
           <h3
-            className="text-sm font-bold text-[#FA4616] uppercase tracking-widest"
+            className="text-sm font-bold text-[#F4811F] uppercase tracking-widest"
             style={{ fontFamily: "var(--font-orbitron-var), Orbitron, sans-serif" }}
           >
             TERM II COUNTDOWN
@@ -54,8 +54,8 @@ export default function TermCountdown() {
             className="absolute inset-y-0 left-0 rounded-full transition-all duration-1000"
             style={{
               width: `${pctRemaining * 100}%`,
-              background: `linear-gradient(90deg, #FA4616, #FF7A45)`,
-              boxShadow: "0 0 20px rgba(250, 70, 22, 0.3), inset 0 1px 0 rgba(255,255,255,0.15)",
+              background: `linear-gradient(90deg, #F4811F, #FF7A45)`,
+              boxShadow: "0 0 20px rgba(244, 129, 31, 0.3), inset 0 1px 0 rgba(255,255,255,0.15)",
             }}
           />
 
@@ -102,7 +102,7 @@ export default function TermCountdown() {
               </span>
             );
           })}
-          <span className="absolute right-0 text-[10px] text-[#FA4616] font-medium">2026</span>
+          <span className="absolute right-0 text-[10px] text-[#F4811F] font-medium">2026</span>
         </div>
 
         {/* Stats row */}
@@ -117,7 +117,7 @@ export default function TermCountdown() {
           </div>
           <div className="text-right">
             <span className="text-[10px] uppercase tracking-wider text-[#4a6a8f]">Remaining</span>
-            <p className="text-sm text-[#FA4616] font-medium">{Math.round(totalDays).toLocaleString()} days</p>
+            <p className="text-sm text-[#F4811F] font-medium">{Math.round(totalDays).toLocaleString()} days</p>
           </div>
         </div>
       </div>

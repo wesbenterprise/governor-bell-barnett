@@ -5,7 +5,7 @@
   --color-navy-card: #0f2040;
   --color-navy-border: #1a3a6b;
   --color-navy-hover: #152847;
-  --color-gold: #FA4616;
+  --color-gold: #F4811F;
   --color-gold-light: #fb6b41;
   --color-gold-dark: #c73a12;
   --font-sans: var(--font-inter-var), Inter, ui-sans-serif, system-ui, sans-serif;
@@ -25,6 +25,6 @@ body {
   background: #0a1628;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FA4616;
+  background: #F4811F;
   border-radius: 3px;
 }

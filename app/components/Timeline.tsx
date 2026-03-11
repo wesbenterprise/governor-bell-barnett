@@ -52,7 +52,7 @@ export default function Timeline() {
       <div className="mb-10 p-6 rounded-xl border border-[#1a3a6b] bg-[#0f2040] shadow-xl">
         <div className="flex flex-col sm:flex-row gap-5 items-start">
           {/* Avatar placeholder */}
-          <div className="flex-shrink-0 w-20 h-20 rounded-full bg-[#152847] border-2 border-[#FA4616] flex items-center justify-center text-3xl shadow-lg">
+          <div className="flex-shrink-0 w-20 h-20 rounded-full bg-[#152847] border-2 border-[#F4811F] flex items-center justify-center text-3xl shadow-lg">
             ⚖️
           </div>
           <div className="flex-1">
@@ -62,7 +62,7 @@ export default function Timeline() {
             >
               {bio.name}
             </h2>
-            <p className="text-[#FA4616] font-semibold text-sm mb-1">{bio.title}</p>
+            <p className="text-[#F4811F] font-semibold text-sm mb-1">{bio.title}</p>
             <p className="text-[#8fafd4] text-xs mb-3">{bio.subtitle}</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
@@ -72,8 +72,8 @@ export default function Timeline() {
                   {bio.term1.start} — {bio.term1.end}
                 </p>
               </div>
-              <div className="bg-[#0a1628] rounded-lg p-2.5 border border-[#FA4616]/40">
-                <p className="text-[10px] text-[#FA4616] uppercase tracking-wider mb-0.5">
+              <div className="bg-[#0a1628] rounded-lg p-2.5 border border-[#F4811F]/40">
+                <p className="text-[10px] text-[#F4811F] uppercase tracking-wider mb-0.5">
                   Term II (Active)
                 </p>
                 <p className="text-xs text-white font-medium">
@@ -83,15 +83,15 @@ export default function Timeline() {
             </div>
 
             <p className="text-xs text-[#8fafd4] mb-1">
-              <span className="text-[#FA4616] font-medium">Appointed by:</span>{" "}
+              <span className="text-[#F4811F] font-medium">Appointed by:</span>{" "}
               {bio.appointedBy}
             </p>
             <p className="text-xs text-[#8fafd4] mb-1">
-              <span className="text-[#FA4616] font-medium">Education:</span>{" "}
+              <span className="text-[#F4811F] font-medium">Education:</span>{" "}
               {bio.education.join(" · ")}
             </p>
             <p className="text-xs text-[#8fafd4]">
-              <span className="text-[#FA4616] font-medium">Also serves on:</span>{" "}
+              <span className="text-[#F4811F] font-medium">Also serves on:</span>{" "}
               {bio.boards.join(" · ")}
             </p>
           </div>
@@ -100,15 +100,15 @@ export default function Timeline() {
         {/* Stats bar */}
         <div className="mt-4 pt-4 border-t border-[#1a3a6b] grid grid-cols-3 gap-3 text-center">
           <div>
-            <p className="text-xl font-bold text-[#FA4616]">2</p>
+            <p className="text-xl font-bold text-[#F4811F]">2</p>
             <p className="text-[10px] text-[#8fafd4] uppercase tracking-wider">Terms</p>
           </div>
           <div>
-            <p className="text-xl font-bold text-[#FA4616]">12</p>
+            <p className="text-xl font-bold text-[#F4811F]">12</p>
             <p className="text-[10px] text-[#8fafd4] uppercase tracking-wider">Universities</p>
           </div>
           <div>
-            <p className="text-xl font-bold text-[#FA4616]">9+</p>
+            <p className="text-xl font-bold text-[#F4811F]">9+</p>
             <p className="text-[10px] text-[#8fafd4] uppercase tracking-wider">Years Remaining</p>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function Timeline() {
           <span className="text-[#8fafd4]">Term I (Nov 2023 – Jan 2026)</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded bg-[#102040] border border-[#FA4616]/30"></div>
+          <div className="w-3 h-3 rounded bg-[#102040] border border-[#F4811F]/30"></div>
           <span className="text-[#8fafd4]">Term II (Jan 2026 – Jan 2033)</span>
         </div>
       </div>
@@ -132,7 +132,7 @@ export default function Timeline() {
       {/* Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#FA4616] via-[#1a3a6b] to-[#FA4616]/30"></div>
+        <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#F4811F] via-[#1a3a6b] to-[#F4811F]/30"></div>
 
         <div className="space-y-0">
           {allSorted.map((m, idx) => {
@@ -169,7 +169,7 @@ export default function Timeline() {
                         : m.significance === "historic"
                         ? "bg-red-500 border-red-300"
                         : m.significance === "major"
-                        ? "bg-[#FA4616] border-[#fb6b41]"
+                        ? "bg-[#F4811F] border-[#fb6b41]"
                         : "bg-[#1a3a6b] border-[#2a5a8b]"
                     } ${isFuture ? "opacity-50" : ""}`}
                   ></div>
@@ -181,7 +181,7 @@ export default function Timeline() {
                         m.isFeatured
                           ? "bg-[#1a0808] border-red-600 shadow-[0_0_24px_rgba(220,38,38,0.25)]"
                           : m.term === 2
-                          ? "bg-[#0d1f38] border-[#FA4616]/25 hover:border-[#FA4616]/50"
+                          ? "bg-[#0d1f38] border-[#F4811F]/25 hover:border-[#F4811F]/50"
                           : "bg-[#0f2040] border-[#1a3a6b] hover:border-[#2a5a8b]"
                       } ${isFuture ? "opacity-60" : ""}`}
                     >
@@ -189,7 +189,7 @@ export default function Timeline() {
                         <div>
                           <span className="text-[11px] text-[#6a8faf] font-mono">{m.date}</span>
                           {m.term === 2 && (
-                            <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-[#FA4616]/10 text-[#FA4616] border border-[#FA4616]/30 font-medium">
+                            <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-[#F4811F]/10 text-[#F4811F] border border-[#F4811F]/30 font-medium">
                               TERM II
                             </span>
                           )}
@@ -225,7 +225,7 @@ export default function Timeline() {
                                   ? "bg-red-900/50 text-red-300 border border-red-700"
                                   : m.voteOutcome === "Board Action"
                                   ? "bg-[#0a1628] text-[#6a8faf] border border-[#1a3a6b]"
-                                  : "bg-[#0a1628] text-[#FA4616] border border-[#FA4616]/40"
+                                  : "bg-[#0a1628] text-[#F4811F] border border-[#F4811F]/40"
                               }`}
                             >
                               <span>📊</span>
