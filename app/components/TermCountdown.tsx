@@ -49,12 +49,12 @@ export default function TermCountdown() {
 
         {/* Thermometer bar */}
         <div className="relative w-full h-10 rounded-full bg-[#0d1a2e] border border-[#1a3a6b] overflow-hidden">
-          {/* Remaining fill (depleting from right) */}
+          {/* Remaining fill (anchored right, depleting leftward) */}
           <div
-            className="absolute inset-y-0 left-0 rounded-full transition-all duration-1000"
+            className="absolute inset-y-0 right-0 rounded-full transition-all duration-1000"
             style={{
               width: `${pctRemaining * 100}%`,
-              background: `linear-gradient(90deg, #F4811F, #FF7A45)`,
+              background: `linear-gradient(270deg, #F4811F, #FF7A45)`,
               boxShadow: "0 0 20px rgba(244, 129, 31, 0.3), inset 0 1px 0 rgba(255,255,255,0.15)",
             }}
           />
@@ -66,7 +66,7 @@ export default function TermCountdown() {
               <div
                 key={yr}
                 className="absolute top-0 bottom-0 w-px bg-[#1a3a6b]"
-                style={{ left: `${100 - markerPct}%` }}
+                style={{ left: `${markerPct}%` }}
               />
             );
           })}
@@ -89,20 +89,20 @@ export default function TermCountdown() {
 
         {/* Year labels under the bar */}
         <div className="relative w-full mt-1.5 h-4">
-          <span className="absolute left-0 text-[10px] text-[#6a8faf]">2033</span>
+          <span className="absolute left-0 text-[10px] text-[#F4811F] font-medium">2026</span>
           {[1, 2, 3, 4, 5, 6].map((yr) => {
             const labelPct = (yr / 7) * 100;
             return (
               <span
                 key={yr}
                 className="absolute text-[10px] text-[#4a6a8f] -translate-x-1/2"
-                style={{ left: `${100 - labelPct}%` }}
+                style={{ left: `${labelPct}%` }}
               >
-                {2033 - yr}
+                {2026 + yr}
               </span>
             );
           })}
-          <span className="absolute right-0 text-[10px] text-[#F4811F] font-medium">2026</span>
+          <span className="absolute right-0 text-[10px] text-[#6a8faf]">2033</span>
         </div>
 
         {/* Stats row */}
